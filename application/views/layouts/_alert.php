@@ -5,17 +5,17 @@ $warning    = $this->session->flashdata('warning');
 
 if ($success) {
     $alert_status   = 'alert-success';
-    $alert          = 'Success!';
+    $status         = 'Success!';
     $message        = $success;
 }
 if ($error) {
     $alert_status   = 'alert-danger';
-    $alert          = 'Error!';
+    $status         = 'Error!';
     $message        = $error;
 }
 if ($warning) {
     $alert_status   = 'alert-warning';
-    $alert          = 'Warning!';
+    $status         = 'Warning!';
     $message        = $warning;
 }
 ?>

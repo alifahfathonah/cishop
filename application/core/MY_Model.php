@@ -28,14 +28,15 @@ class MY_Model extends CI_Model
      */
     public function validate()
     {
-        $this->load->library('form validation');
-        $this->form_validation->set_error_delimeters(
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_error_delimiters(
             '<small class="form-text text-danger">',
             '</small>'
         );
         $validationRules = $this->getValidationRules();
 
-        $this->$this->form_validation->set_rules($validationRules);
+        $this->form_validation->set_rules($validationRules);
 
         return $this->form_validation->run();
     }
